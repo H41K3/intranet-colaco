@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intranet | Colaço Soluções Contábeis</title>
     <link rel="icon" type="image/png" href="icone.png" />
-    <link rel="stylesheet" href="style.css?v=15" />
-    <script src="app.js?v=15" defer></script>
+    <link rel="stylesheet" href="style.css?v=21" />
+    <script src="app.js?v=21" defer></script>
   </head>
   <body>
     <div class="shell">
@@ -15,24 +15,21 @@
           <img src="logo.png" alt="Colaço Soluções Contábeis" />
         </button>
         <button class="nav-btn active" data-home>Início</button>
-
         <div class="nav-title">Setores</div>
         <button class="nav-btn" data-dep="contabil">Contábil</button>
         <button class="nav-btn" data-dep="financeiro">Financeiro</button>
         <button class="nav-btn" data-dep="fiscal">Fiscal</button>
+        <button class="nav-btn" data-dep="pessoal">Pessoal</button>
         <button class="nav-btn" data-dep="processos">Processos</button>
-
         <div class="nav-title">Sistemas</div>
         <button class="nav-btn" data-dep="sistemas-gerais">Gerais</button>
       </aside>
-
       <main>
         <section id="view-dash" class="view active">
           <div class="page-head">
             <h2>Portal do Colaborador</h2>
             <p>Bem-vindo(a) à Intranet da Colaço Soluções Contábeis.</p>
           </div>
-
           <div class="notices">
             <h3>Quadro de Avisos</h3>
             <div class="notice">
@@ -44,17 +41,17 @@
             </div>
             <div class="notice">
               <h4>Busca</h4>
-              <p>Dentro de cada setor, use o campo de busca para filtrar a lista.</p>
+              <p>
+                Dentro de cada setor, use o campo de busca para filtrar a lista.
+              </p>
             </div>
           </div>
         </section>
-
         <section id="view-sector" class="view">
           <div class="page-head">
             <h2 id="sector-title">Setor</h2>
             <p>Portais oficiais e ferramentas da empresa.</p>
           </div>
-
           <label id="search-box" class="search" hidden>
             <span aria-hidden="true">⌕</span>
             <input
@@ -64,7 +61,6 @@
               placeholder="Procurar ferramenta"
             />
           </label>
-
           <div id="rows" class="rows"></div>
         </section>
       </main>
